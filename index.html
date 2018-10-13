@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Gaurangi Wanjari</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/scroll.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
   </head>
 
@@ -31,23 +33,26 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Gaurangi Wanjari</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/gaurangi-wanjari/" target="_blank">LinkedIn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="https://github.com/24gaurangi" target="_blank">Github</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -59,7 +64,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
+              <strong>Software Developer</strong>
             </h1>
             <hr>
           </div>
@@ -231,29 +236,42 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          <div class="col-lg-4 mr-auto">
+            <ul class="list-unstyled">
+              <li><span class="fas fa-map-marked text-primary">  San Mateo, California - 94403</span></li><br>
+              <li><span class="fas fa-phone text-primary">  123-456-6789 </span></li><br>
+              <li><span class="fas fa-envelope text-primary"><a href="mailto:gwanjari19@gmail.com"> gwanjari19@gmail.com</a></li><br>
+            </ul>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-            </p>
+          <div class="col-lg-8 ml-auto">
+            <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.00374920735!2d-122.35073532538905!3d37.556530753215775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan+Mateo%2C+CA!5e0!3m2!1sen!2sus!4v1539386774424" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="bg-primary">
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-3 ml-auto text-center">
+          <br>
+           <a href="#" id="brand-logo"><i class="fab fa-facebook-f text-white"></i></a>
+           <a href="#" id="brand-logo"><i class="fab fa-github text-white"></i></a>
+           <a href="#" id="brand-logo"><i class="fab fa-google-plus-g text-white"></i></a>
+          <br><br>
+        </div>
+        </div>
+       </div> 
+     
+    </footer>
+
+    <a href="javascript:" id="back-to-top"> <i class="fa fa-chevron-up"></i></a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -267,6 +285,24 @@
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
 
+    <script>
+      // ===== Scroll to Top ==== 
+      $(window).scroll(function() 
+        {
+          if ($(this).scrollTop() > 50) 
+          {
+            $('#back-to-top').fadeIn(200);
+          } else 
+          {
+            $('#back-to-top').fadeOut(200);
+          }
+        });
+      $('#back-to-top').click(function() 
+      {
+        $('html,body').animate({scrollTop: 0}, 300);
+      });
+
+    </script>
   </body>
 
 </html>
