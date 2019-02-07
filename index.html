@@ -54,7 +54,7 @@
 
   </head>
 
-  <body id="page-top" class="scrollspy">
+  <body id="page-top" class="">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -65,48 +65,51 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Home</a>
+            <!-- <li class="nav-item">
+              <a href="https://www.linkedin.com/in/gaurangi-wanjari/" target="_blank" class="btn-floating btn-small blue tooltipped" data-tooltip="LinkedIn">
+              <i class="fab fa-linkedin"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/gaurangi-wanjari/" target="_blank">LinkedIn</a>
+              <a href="https://github.com/24gaurangi" target="_blank" class="btn-floating btn-small black tooltipped" data-tooltip="Github">
+              <i class="fab fa-github"></i></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/in/gaurangi-wanjari/" target="_blank" >LinkedIn</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="https://github.com/24gaurangi" target="_blank">Github</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- parallax -->
-      <div class="parallax-container">
-        <div class="valign-wrapper h100">
-          <div class="container my-auto">
-            <div class="row">
-              <div class="col-lg-10 mx-auto">
-                <h1 class="text-white text-uppercase overlay center-align">
-                  <strong>Software Developer</strong>
-                  <hr>
-                </h1>
-              </div>
-              <div class="col-lg-8 mx-auto">
-                <p class="text-faded mb-5">I am a Software developer with over 5 years of industry experience in the development and maintenance of applications. I am competent in data processing and understanding complex logic, have worked on legacy codes without impacting the existing functionality.</p>
-                <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
-              </div>
-            </div>
+    <!-- header -->
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-white text-uppercase">
+              <strong>Software Developer</strong>
+              <hr>
+            </h1>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">
+              "I am a Software developer with over 5 years of industry experience in the development and maintenance of applications.
+              I am competent in data processing and understanding complex logic, have worked on legacy codes without impacting the existing
+              functionality."
+            </p>
+            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
           </div>
         </div>
-        <div class="parallax">
-          <img src="img//header.jpg" alt="" class="responsive-img">
-        </div>
       </div>
-
+    </header>
     <!--
     <section class="bg-primary" id="about">
       <div class="container">
@@ -164,72 +167,74 @@
       </div>
     </section>
 -->
-
-    <section id="project" class="bg-primary">
-      <div class="container text-white text-center">
-        <h3 class="mb-4">Projects</h3>
+    <!-- projects -->
+    <section class="" id="project">
+      <div class="container text-primary text-center">
+        <!-- <h3 class="mb-4">Projects</h3> -->
       </div>
-    </section>
-
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
+      <div class="container">
         <div class="row no-gutters popup-gallery">
-          <div class="col l5 s12 offset-l2">
-            <a class="portfolio-box" href="img/portfolio/fullsize/Cutoff_Histogram_visualization.png">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Cutoff_Histogram_visualization.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">Category</div>
-                  <div class="project-name"> Project Name</div>
-                </div>
-              </div>
-            </a>
-          </div>
           <div class="col l5 s12">
-            <a class="portfolio-box" href="img/portfolio/fullsize/Taskmgr_app_screenshot.png">
-              <img class="img-fluid" src="img/portfolio/thumbnails/Taskmgr_app_screenshot.png" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
+            <div class="card grey lighten-3">
+              <div class="card-image ">
+                <img class="responsive-img materialboxed" src="img/portfolio/fullsize/Cutoff_Histogram_visualization.jpg">
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-3">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
+          <div class="col l5 s12 offset-l2">
+            <div class="card grey lighten-3">
+              <div class="card-image ">
+                <img class="responsive-img materialboxed" src="img/portfolio/fullsize/Taskmgr_app_screenshot.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-3">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row no-gutters popup-gallery">
-          <div class="col l5 s12 offset-l2">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
+          <div class="col l5 s12 ">
+            <div class="card grey lighten-3">
+              <div class="card-image ">
+                <img class="responsive-img materialboxed" src="img/portfolio/fullsize/4.jpg">
               </div>
-            </a>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-3">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
-          <div class="col l5 s12">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
+          <div class="col l5 s12  offset-l2">
+            <div class="card grey lighten-3">
+              <div class="card-image ">
+                <img class="responsive-img materialboxed" src="img/portfolio/fullsize/5.jpg">
               </div>
-            </a>
+              <div class="card-content waves-effect waves-block waves-light">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-3">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -241,22 +246,22 @@
         </div>
       </div>
         <!-- Contact -->
-    <section id="contact" class="bg-primary">
+    <section id="contact" class="text-primary">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 offset-l3">
+          <div class="col-lg-6">
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.00374920735!2d-122.35073532538905!3d37.556530753215775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan+Mateo%2C+CA!5e0!3m2!1sen!2sus!4v1539386774424"
                 width="550" height="300" frameborder="10" style="border:6px" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-lg-3">
-            <ul class="list-unstyled text-white">
+          <div class="offset-l3 col-lg-3">
+            <ul class="list-unstyled text-primary">
               <li></li><br>
               <li></li><br>
               <li><i class="material-icons prefix">map</i>  San Mateo, California - 94403</li><br>
               <li><i class="material-icons prefix">phone</i>  +1 408-329-8127 </li><br>
-              <li><i class="material-icons prefix ">email</i><a href="mailto:gwanjari19@gmail.com" class="text-white"> gwanjari19@gmail.com</a></li>
+              <li><i class="material-icons prefix ">email</i><a href="mailto:gwanjari19@gmail.com"> gwanjari19@gmail.com</a></li>
             </ul>
           </div>
         </div>
@@ -304,11 +309,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- Bootstrap core JavaScript
-    <script src="vendor/jquery/jquery.min.js"></script>
+
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     -->
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script src="js/creative.js"></script>
     <script>
       $(document).ready(function(){
         $('.sidenav').sidenav();
