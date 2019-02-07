@@ -2,13 +2,39 @@
 <html lang="en">
 
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Font awsome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      header{
+        background: url(img//11.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+      }
+      @media screen and (max-width: 670px){
+        header{
+          min-height: 500px;
+        }
+      }
+      .section{
+        padding-top: 4vw;
+      }
+      .imgboxes{
+        padding: 10px, 10px;
+        border: solid 1px;
+      }
+    </style>
 
-    <title>Gaurangi Wanjari</title>
+    <title>Gaurangi Wanjari-Software Engineer Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +48,13 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
   </head>
 
-  <body id="page-top">
+  <body id="page-top" class="scrollspy">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -58,23 +84,28 @@
         </div>
       </div>
     </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Software Developer</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">I am a Software developer with over 5 years of industry experience in the development and maintenance of applications. I am competent in data processing and understanding complex logic, have worked on legacy codes without impacting the existing functionality.</p>
-            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+    <!-- parallax -->
+      <div class="parallax-container">
+        <div class="valign-wrapper h100">
+          <div class="container my-auto">
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <h1 class="text-white text-uppercase overlay center-align">
+                  <strong>Software Developer</strong>
+                  <hr>
+                </h1>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <p class="text-faded mb-5">I am a Software developer with over 5 years of industry experience in the development and maintenance of applications. I am competent in data processing and understanding complex logic, have worked on legacy codes without impacting the existing functionality.</p>
+                <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+              </div>
+            </div>
           </div>
         </div>
+        <div class="parallax">
+          <img src="img//header.jpg" alt="" class="responsive-img">
+        </div>
       </div>
-    </header>
 
     <!--
     <section class="bg-primary" id="about">
@@ -133,8 +164,9 @@
       </div>
     </section>
 -->
-    <section class="bg-primary text-white">
-      <div class="container text-center">
+
+    <section id="project" class="bg-primary">
+      <div class="container text-white text-center">
         <h3 class="mb-4">Projects</h3>
       </div>
     </section>
@@ -142,24 +174,20 @@
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
+          <div class="col l5 s12 offset-l2">
             <a class="portfolio-box" href="img/portfolio/fullsize/Cutoff_Histogram_visualization.png">
               <img class="img-fluid" src="img/portfolio/thumbnails/Cutoff_Histogram_visualization.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                  <div class="project-category text-faded">Category</div>
+                  <div class="project-name"> Project Name</div>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+          <div class="col l5 s12">
+            <a class="portfolio-box" href="img/portfolio/fullsize/Taskmgr_app_screenshot.png">
+              <img class="img-fluid" src="img/portfolio/thumbnails/Taskmgr_app_screenshot.png" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
@@ -172,22 +200,8 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
+        <div class="row no-gutters popup-gallery">
+          <div class="col l5 s12 offset-l2">
             <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -202,7 +216,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col l5 s12">
             <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -217,92 +231,92 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
+        </div>
+      </div>
+    </section>
+    <!-- parallax -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="img//contact.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+        <!-- Contact -->
+    <section id="contact" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-l3">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.00374920735!2d-122.35073532538905!3d37.556530753215775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan+Mateo%2C+CA!5e0!3m2!1sen!2sus!4v1539386774424"
+                width="550" height="300" frameborder="10" style="border:6px" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <ul class="list-unstyled text-white">
+              <li></li><br>
+              <li></li><br>
+              <li><i class="material-icons prefix">map</i>  San Mateo, California - 94403</li><br>
+              <li><i class="material-icons prefix">phone</i>  +1 408-329-8127 </li><br>
+              <li><i class="material-icons prefix ">email</i><a href="mailto:gwanjari19@gmail.com" class="text-white"> gwanjari19@gmail.com</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-
-        <!-- Contact -->
-    <section id="contact">
+    <!-- footer -->
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col s12 l12">
+          <a href="#page-top" class="btn-floating grey darken-4 right tooltipped" data-tooltip="Ride to Top">
+            <i class="fa fa-chevron-up right"></i></a>
+        </div>
+      </div>
+    </div> -->
+    <footer class="page-footer grey darken-3">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 mr-auto">
-            <ul class="list-unstyled">
-              <li><span class="fas fa-map-marked text-primary">  San Mateo, California - 94403</span></li><br>
-              <li><span class="fas fa-phone text-primary">  +1 408-329-8127 </span></li><br>
-              <li><span class="fas fa-envelope text-primary"><a href="mailto:gwanjari19@gmail.com"> gwanjari19@gmail.com</a></li><br>
-            </ul>
+          <div class="col s12 l6">
+            <h5>About Me</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit
+            </p>
           </div>
-          <div class="col-lg-8 ml-auto">
-            <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.00374920735!2d-122.35073532538905!3d37.556530753215775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan+Mateo%2C+CA!5e0!3m2!1sen!2sus!4v1539386774424" width="800" height="450" frameborder="10" style="border:5px" allowfullscreen></iframe>
+          <div class="col s12 l4 offset-l2">
+            <h5>Connect</h5>
+            <p>in voluptate velit esse cillum dolore eu fugiat Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.</p>
+            <div class="container">
+              <a href="#" class="btn-floating indigo darken-3 tooltipped" data-tooltip="Facebook">
+              <i class="fab fa-facebook"></i></a>
+              <a href="#" class="btn-floating pink lighten-2 tooltipped" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i></a>
+              <a href="#" class="btn-floating light-blue lighten-3 tooltipped" data-tooltip="Twitter">
+              <i class="fab fa-twitter"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <footer class="bg-primary">
-      <div class="container">
-        <div class="row">
-        <div class="col-lg-2 ml-auto text-center">
-
-           <a href="#" id="brand-logo"><i class="fab fa-facebook-f text-white"></i></a>
-           <a href="#" id="brand-logo"><i class="fab fa-github text-white"></i></a>
-           <a href="#" id="brand-logo"><i class="fab fa-google-plus-g text-white"></i></a>
-          <br>
-        </div>
-        </div>
-       </div>
-
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">Gaurangi Wanjari &copy; 2019 </div>
+      </div>
     </footer>
-
-    <a href="javascript:" id="back-to-top"> <i class="fa fa-chevron-up"></i></a>
-
-    <!-- Bootstrap core JavaScript -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!-- Bootstrap core JavaScript
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
+    -->
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-
     <script>
-      // ===== Scroll to Top ====
-      $(window).scroll(function()
-        {
-          if ($(this).scrollTop() > 50)
-          {
-            $('#back-to-top').fadeIn(200);
-          } else
-          {
-            $('#back-to-top').fadeOut(200);
-          }
-        });
-      $('#back-to-top').click(function()
-      {
-        $('html,body').animate({scrollTop: 0}, 300);
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tooltipped').tooltip();
+        $('.scrollspy').scrollSpy();
       });
-
     </script>
   </body>
-
 </html>
