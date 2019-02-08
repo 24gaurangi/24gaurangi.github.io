@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
@@ -34,13 +34,8 @@ a:hover {
   color: #f05f40;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
 }
 
 .bg-primary {
@@ -348,4 +343,20 @@ section#contact.bg-primary{
   letter-spacing: .11em;
   font-size: 2.25em;
   text-rendering: optimizeLegibility;
+}
+.footer-text{
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: .07rem;
+}
+.btn-floating{
+  margin: 2px 4px;
+}
+.btn{
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.form{
+  margin: auto;
+  padding: 30px 30px 40px 30px;
 }

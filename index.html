@@ -13,28 +13,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <style>
-      header{
-        background: url(img//11.jpg);
-        background-size: cover;
-        background-position: center;
-        min-height: 1000px;
-      }
-      @media screen and (max-width: 670px){
-        header{
-          min-height: 500px;
-        }
-      }
-      .section{
-        padding-top: 4vw;
-      }
-      .imgboxes{
-        padding: 10px, 10px;
-        border: solid 1px;
-      }
-    </style>
-
-    <title>Gaurangi Wanjari-Software Engineer Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,6 +29,7 @@
     <link href="css/creative.css" rel="stylesheet">
     <link href="css/scroll.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Gaurangi Wanjari | Software Engineer Portfolio</title>
 
   </head>
 
@@ -173,8 +152,8 @@
         <!-- <h3 class="mb-4">Projects</h3> -->
       </div>
       <div class="container">
-        <div class="row no-gutters popup-gallery">
-          <div class="col l5 s12">
+        <div class="row ">
+          <div class="col l6 s12">
             <div class="card grey lighten-3">
               <div class="card-image ">
                 <img class="responsive-img materialboxed" src="img/portfolio/fullsize/Cutoff_Histogram_visualization.jpg">
@@ -189,7 +168,7 @@
               </div>
             </div>
           </div>
-          <div class="col l5 s12 offset-l2">
+          <div class="col l6 s12 ">
             <div class="card grey lighten-3">
               <div class="card-image ">
                 <img class="responsive-img materialboxed" src="img/portfolio/fullsize/Taskmgr_app_screenshot.png">
@@ -205,8 +184,8 @@
             </div>
           </div>
         </div>
-        <div class="row no-gutters popup-gallery">
-          <div class="col l5 s12 ">
+        <div class="row ">
+          <div class="col l6 s12 ">
             <div class="card grey lighten-3">
               <div class="card-image ">
                 <img class="responsive-img materialboxed" src="img/portfolio/fullsize/4.jpg">
@@ -221,7 +200,7 @@
               </div>
             </div>
           </div>
-          <div class="col l5 s12  offset-l2">
+          <div class="col l6 s12  ">
             <div class="card grey lighten-3">
               <div class="card-image ">
                 <img class="responsive-img materialboxed" src="img/portfolio/fullsize/5.jpg">
@@ -246,23 +225,33 @@
         </div>
       </div>
         <!-- Contact -->
-    <section id="contact" class="text-primary">
+    <section id="contact" class="">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-5 ">
+            <form action="" class="form grey lighten-3">
+              <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email">
+                <label for="email">Your Email</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">message</i>
+                <textarea class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                <label for="message">Your Message</label>
+              </div>
+              <div class="container center">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5 offset-l2">
             <div class="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50607.00374920735!2d-122.35073532538905!3d37.556530753215775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9e60efa95545%3A0xfd8efcf42dcc1ba7!2sSan+Mateo%2C+CA!5e0!3m2!1sen!2sus!4v1539386774424"
-                width="550" height="300" frameborder="10" style="border:6px" allowfullscreen></iframe>
+                width="500" height="300" frameborder="10" style="border:6px" allowfullscreen></iframe>
             </div>
-          </div>
-          <div class="offset-l3 col-lg-3">
-            <ul class="list-unstyled text-primary">
-              <li></li><br>
-              <li></li><br>
-              <li><i class="material-icons prefix">map</i>  San Mateo, California - 94403</li><br>
-              <li><i class="material-icons prefix">phone</i>  +1 408-329-8127 </li><br>
-              <li><i class="material-icons prefix ">email</i><a href="mailto:gwanjari19@gmail.com"> gwanjari19@gmail.com</a></li>
-            </ul>
           </div>
         </div>
       </div>
@@ -280,23 +269,24 @@
       <div class="container">
         <div class="row">
           <div class="col s12 l6">
-            <h5>About Me</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit
+            <h5 class="white-text">About Me</h5>
+            <p class="footer-text blue-text text-lighten-5">I'm a Software Engineer with passion for programming. I enjoy developing user-friendly applications with emphasis on design.
+               I have keen interest in data analytics and I am always seeking to learn new tools to work with data.
+               Thank you for stopping by to check out my projects!
             </p>
           </div>
           <div class="col s12 l4 offset-l2">
-            <h5>Connect</h5>
-            <p>in voluptate velit esse cillum dolore eu fugiat Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.</p>
+            <h5 class="white-text" >Connect</h5>
+            <p class="footer-text blue-text text-lighten-5">Connect with me on:</p>
             <div class="container">
-              <a href="#" class="btn-floating indigo darken-3 tooltipped" data-tooltip="Facebook">
+              <a href="#" class="btn-floating indigo darken-2 tooltipped" data-tooltip="Facebook">
               <i class="fab fa-facebook"></i></a>
               <a href="#" class="btn-floating pink lighten-2 tooltipped" data-tooltip="Instagram">
               <i class="fab fa-instagram"></i></a>
               <a href="#" class="btn-floating light-blue lighten-3 tooltipped" data-tooltip="Twitter">
               <i class="fab fa-twitter"></i></a>
+              <a href="mailto:gwanjari19@gmail.com" class="btn-floating orange lighten-2 tooltipped" data-tooltip="Email">
+              <i class="fa fa-envelope"></i></a>
             </div>
           </div>
         </div>
