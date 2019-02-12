@@ -1,4 +1,3 @@
-// Global styling for this template
 body,
 html {
   width: 100%;
@@ -6,74 +5,85 @@ html {
 }
 
 body {
-  @include serif-font;
+  @include body-font;
 }
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: $primary;
+// Custom Button Size
+.btn-xl {
+  padding: 1.25rem 2.5rem;
 }
 
-hr.light {
-  border-color: $white;
+// Content Section
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
-a {
-  color: $primary;
-  @include transition-all;
-  &:hover {
-    color: darken($primary, .1);
+.content-section-heading {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 }
 
+// Typography
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @include sans-serif-font;
-}
-
-.bg-primary {
-  background-color: $primary !important;
-}
-
-.bg-dark {
-  background-color: $gray-900 !important;
+  font-weight: 700;
 }
 
 .text-faded {
-  color: fade-out($white, .3);
+  color: fade-out($white, 0.3);
 }
 
-section {
-  padding: 8rem 0;
+/* Map */
+
+.map {
+  height: 30rem;
 }
 
-.section-heading {
-  margin-top: 0;
+@media(max-width: 992px) {
+  .map {
+    height: 75%;
+  }
 }
 
-::-moz-selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
+.map iframe {
+  pointer-events: none;
 }
 
-::selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
-}
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
 
-img::selection {
-  color: $white;
-  background: transparent;
-}
+  display: none;
 
-img::-moz-selection {
-  color: $white;
-  background: transparent;
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  color: white;
+  background: fade-out($gray-800, .5);
+
+  line-height: 45px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
 }
