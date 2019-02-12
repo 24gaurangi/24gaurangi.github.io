@@ -20,8 +20,8 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  //Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollSpy({
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
     target: '#mainNav',
     offset: 57
   });
@@ -40,7 +40,7 @@
   $(window).scroll(navbarCollapse);
 
   // Scroll reveal calls
-  window.sr = ScrollReveal({reset: true});
+  window.sr = ScrollReveal();
 
   sr.reveal('.sr-icon-1', {
     delay: 200,
