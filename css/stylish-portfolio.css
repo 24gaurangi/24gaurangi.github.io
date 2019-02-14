@@ -13,7 +13,9 @@ html {
 body {
   font-family: 'Source Sans Pro';
 }
-
+ul{
+  list-style-type: none;
+}
 .btn-xl {
   padding: 1.25rem 2.5rem;
 }
